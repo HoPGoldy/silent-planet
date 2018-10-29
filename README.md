@@ -5,7 +5,7 @@
 
 脚本主程：HoPGodly(本人)
 
-内容创作： @xiuxiuxiucai
+内容创作： [@xiuxiuxiucai](https://github.com/xiuxiuxiucai)
 
 CocosCreator版本： 1.6
 
