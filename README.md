@@ -1,9 +1,13 @@
 # SilentPlanet
 使用Cocos打造的文字冒险游戏《小黑屋》仿制版本
 
-## CocosCreator信息
+## 详情
 
-版本信息： 1.6
+脚本主程：HoPGodly(本人)
+
+内容创作： @xiuxiuxiucai
+
+CocosCreator版本： 1.6
 
 脚本语言：js
 
