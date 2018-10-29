@@ -1,0 +1,3 @@
+-优化代码结构 现在articleButton，buildButton,item预制体可以自己更新数据了
+-修改场景ControlCenter的加载方式
+-优化数据库

@@ -1,0 +1,153 @@
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        // foo: {
+        //    default: null,      // The default value will be used only when the component attaching
+        //                           to a node for the first time
+        //    url: cc.Textrue2D,  // optional, default is typeof default
+        //    serializable: true, // optional, default is true
+        //    visible: true,      // optional, default is true
+        //    displayName: 'Foo', // optional
+        //    readonly: false,    // optional, default is false
+        // },
+        // ...
+    },
+
+    // use this for initialization
+    onLoad: function () {
+        //this.creatJSON();
+    },
+	showJSON:function(){
+		var buildData = JSON.parse(cc.sys.localStorage.getItem("buildData"));
+		var articleData = JSON.parse(cc.sys.localStorage.getItem("articleData"));
+		var backPackData = JSON.parse(cc.sys.localStorage.getItem("backPackData"));
+		var skillData = JSON.parse(cc.sys.localStorage.getItem("skillData"));
+		var personnelData = JSON.parse(cc.sys.localStorage.getItem("personnelData"));
+		var backPackInfo = JSON.parse(cc.sys.localStorage.getItem("backPackInfo"));
+		var massageData = JSON.parse(cc.sys.localStorage.getItem("massageData"))
+		cc.log("buildData");
+		cc.log(buildData);
+		cc.log("articleDataData:");
+		cc.log(articleData);
+		cc.log("backPackData:");
+		cc.log(backPackData);
+		cc.log("skillData");
+		cc.log(skillData);
+		cc.log("personnelData");
+		cc.log(personnelData);
+		cc.log("backPackInfo");
+		cc.log(backPackInfo);
+		cc.log("massageData");
+		cc.log(massageData);
+	},
+    creatJSON:function(){
+		var buildData = [
+			{"id":0,"name":"石屋","number":0,"resourcesUsed":[{"name":"石块","number":100},],"state":true},
+			{"id":1,"name":"小屋","number":0,"resourcesUsed":[{"name":"石块","number":200},],"state":true},
+			{"id":2,"name":"熔炉","number":0,"resourcesUsed":[{"name":"石块","number":100},],"state":true},
+			{"id":3,"name":"塑料厂","number":0,"resourcesUsed":[{"name":"石块","number":500},{"name":"铁","number":200}],"state":true},
+			{"id":4,"name":"炼钢炉","number":0,"resourcesUsed":[{"name":"石块","number":2000},{"name":"铁","number":1000}],"state":true},
+			{"id":5,"name":"炼金屋","number":0,"resourcesUsed":[{"name":"石块","number":2000},{"name":"铁","number":3000},{"name":"钢","number":1000}],"state":true},
+			{"id":6,"name":"炼矿屋","number":0,"resourcesUsed":[{"name":"石块","number":2000},{"name":"铁","number":1000},{"name":"钢","number":100}],"state":true},
+			{"id":7,"name":"实验室","number":0,"resourcesUsed":[{"name":"铁","number":10000},{"name":"金刚","number":0},{"name":"硅","number":0}],"state":true},
+			{"id":8,"name":"祭坛","number":0,"resourcesUsed":[{"name":"石头","number":100000},],"state":true}
+		];
+		var articleData = [
+			{"id":0,"name":"石头","number":10,"weight":0,"resourcesUsed":0,"state":true,"canManufacture":false,"canBuy":false,"canUseToAdventure":false,"cost":0},
+			{"id":1,"name":"垃圾","number":0,"weight":0,"resourcesUsed":0,"state":true,"canManufacture":false,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":2,"name":"石块","number":0,"weight":0,"resourcesUsed":[{"name":"石头","number":1}],"state":true,"canManufacture":true,"canBuy":false,"canUseToAdventure":false,"cost":0},
+			{"id":3,"name":"铁","number":0,"weight":0,"resourcesUsed":[{"name":"石头","number":3}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":4,"name":"铁铲","number":0,"weight":0,"resourcesUsed":[{"name":"铁","number":200},{"name":"石头","number":80}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":5,"name":"铁剑","number":0,"weight":1,"resourcesUsed":[{"name":"铁","number":0},{"name":"石头","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":6,"name":"铁甲","number":0,"weight":3,"resourcesUsed":[{"name":"铁","number":0},{"name":"塑料","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":7,"name":"塑料","number":0,"weight":0,"resourcesUsed":[{"name":"垃圾","number":20}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":8,"name":"火把","number":0,"weight":1,"resourcesUsed":[{"name":"塑料","number":2},{"name":"铁","number":5}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":9,"name":"钢","number":0,"weight":0,"resourcesUsed":[{"name":"铁","number":10}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":10,"name":"钢铲","number":0,"weight":0,"resourcesUsed":[{"name":"钢","number":200},{"name":"石头","number":400}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":11,"name":"钢剑","number":0,"weight":2,"resourcesUsed":[{"name":"钢","number":0},{"name":"石头","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":12,"name":"钢甲","number":0,"weight":6,"resourcesUsed":[{"name":"钢","number":0},{"name":"塑料","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":13,"name":"矿石","number":0,"weight":0,"resourcesUsed":0,"state":true,"canManufacture":false,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":14,"name":"铅","number":0,"weight":0,"resourcesUsed":0,"state":true,"canManufacture":false,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":15,"name":"硅","number":0,"weight":0,"resourcesUsed":0,"state":true,"canManufacture":false,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":16,"name":"电池","number":0,"weight":1,"resourcesUsed":[{"name":"塑料","number":10},{"name":"铅","number":10}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":17,"name":"元器件","number":0,"weight":0,"resourcesUsed":[{"name":"塑料","number":30},{"name":"硅","number":1}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":18,"name":"手电筒","number":0,"weight":1,"resourcesUsed":[{"name":"塑料","number":50},{"name":"电池","number":3},{"name":"元器件","number":1}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":19,"name":"电钻","number":0,"weight":0,"resourcesUsed":[{"name":"金刚","number":10},{"name":"塑料","number":400},{"name":"电池","number":5}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":20,"name":"电击枪","number":0,"weight":1,"resourcesUsed":[{"name":"塑料","number":0},{"name":"电池","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":21,"name":"太空车","number":0,"weight":0,"resourcesUsed":[{"name":"钢","number":0},{"name":"电池","number":0},{"name":"塑料","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":22,"name":"金","number":0,"weight":0,"resourcesUsed":[{"name":"石头","number":500}],"state":true,"canManufacture":true,"canBuy":false,"canUseToAdventure":false,"cost":0},
+			{"id":23,"name":"金刚","number":0,"weight":0,"resourcesUsed":[{"name":"钢","number":30},{"name":"金","number":1}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":24,"name":"金刚甲","number":0,"weight":15,"resourcesUsed":[{"name":"金刚","number":0},{"name":"塑料","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":25,"name":"金甲","number":0,"weight":30,"resourcesUsed":[{"name":"金","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":26,"name":"铀","number":0,"weight":0,"resourcesUsed":0,"state":true,"canManufacture":false,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":27,"name":"激光钻","number":0,"weight":0,"resourcesUsed":[{"name":"外星科技","number":0},{"name":"塑料","number":0},{"name":"铁","number":10}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":28,"name":"激光剑","number":0,"weight":2,"resourcesUsed":[{"name":"外星科技","number":0},{"name":"铀","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":true,"cost":0},
+			{"id":29,"name":"飞船","number":0,"weight":0,"resourcesUsed":[{"name":"外星科技","number":0},{"name":"钢","number":0},{"name":"铀","number":0}],"state":true,"canManufacture":true,"canBuy":true,"canUseToAdventure":false,"cost":0},
+			{"id":30,"name":"金子","number":0,"weight":0,"resourcesUsed":0,"state":true,"canManufacture":false,"canBuy":false,"canUseToAdventure":false,"cost":0}
+		]
+		var backPackData = [
+			{"id":5,"name":"铁剑","number":0,"weight":1},
+			{"id":6,"name":"铁甲","number":0,"weight":3},
+			{"id":8,"name":"火把","number":0,"weight":1},
+			{"id":11,"name":"钢剑","number":0,"weight":2},
+			{"id":12,"name":"钢甲","number":0,"weight":6},
+			{"id":16,"name":"电池","number":0,"weight":1},
+			{"id":18,"name":"手电筒","number":0,"weight":1},
+			{"id":20,"name":"电击枪","number":0,"weight":1},
+			{"id":24,"name":"金刚甲","number":0,"weight":15},
+			{"id":25,"name":"金甲","number":0,"weight":30},
+			{"id":28,"name":"激光剑","number":0,"weight":2},
+		]
+		var backPackInfo = {"maxWeight":100}
+		
+		var skillData = [
+			{"id":0,"name":"潜行术","introduce":"遇敌率减半","state":true},
+			{"id":0,"name":"千里眼","introduce":"视野加倍","state":true},
+			{"id":0,"name":"会心一击","introduce":"伤害增加","state":true},
+			{"id":0,"name":"凌波微步","introduce":"闪避率增加","state":true},
+			{"id":0,"name":"百发百中","introduce":"命中率增加","state":true},
+			{"id":0,"name":"细嚼慢咽","introduce":"食物消耗量降低","state":true},
+			{"id":0,"name":"坚持不懈","introduce":"物资用尽后坚持的时间","state":true},
+			{"id":0,"name":"身强力壮","introduce":"基础生命值增加","state":true}
+		]
+		var personnelData = [
+			{"id":0,"name":"石矿工","number":0,"make":[{"name":"石头","number":1}],"consume":0,"state":true},
+			{"id":1,"name":"垃圾工人","number":0,"make":[{"name":"垃圾","number":0.5}],"consume":0,"state":true},
+			{"id":2,"name":"石块工人","number":0,"make":[{"name":"石块","number":1}],"consume":[{"name":"石头","number":1}],"state":true},
+			{"id":3,"name":"炼铁工人","number":0,"make":[{"name":"铁","number":1}],"consume":[{"name":"石头","number":3}],"state":true},
+			{"id":4,"name":"塑料工人","number":0,"make":[{"name":"塑料","number":0.1}],"consume":[{"name":"垃圾","number":1}],"state":true},
+			{"id":5,"name":"炼钢工人","number":0,"make":[{"name":"钢","number":1}],"consume":[{"name":"铁","number":10},{"name":"石头","number":10}],"state":true},
+			{"id":6,"name":"矿工","number":0,"make":[{"name":"矿石","number":1}],"consume":0,"state":true},
+			{"id":7,"name":"炼金术师","number":0,"make":[{"name":"金","number":0.1}],"consume":[{"name":"石头","number":500}],"state":true},
+		]
+		
+		var massageData = [
+			{"id":0,"name":"a","content":"aaa"}
+		]
+		
+		cc.sys.localStorage.setItem("buildData",JSON.stringify(buildData));
+		cc.sys.localStorage.setItem("articleData",JSON.stringify(articleData));
+		cc.sys.localStorage.setItem("backPackData",JSON.stringify(backPackData));
+		cc.sys.localStorage.setItem("skillData",JSON.stringify(skillData));
+		cc.sys.localStorage.setItem("personnelData",JSON.stringify(personnelData));
+		cc.sys.localStorage.setItem("backPackInfo",JSON.stringify(backPackInfo));
+		cc.sys.localStorage.setItem("massageData",JSON.stringify(massageData));
+		
+		cc.log("reset-buildData");
+		cc.log(buildData);
+		cc.log("reset-articleDataData:");
+		cc.log(articleData);
+		cc.log("reset-backPackData:");
+		cc.log(backPackData);
+		cc.log("reset-skillData");
+		cc.log(skillData);
+		cc.log("reset-personnelData");
+		cc.log(personnelData);
+		cc.log("reset-backPackInfo");
+		cc.log(backPackInfo);
+		cc.log("reset-massageData");
+		cc.log(massageData);
+	},
+	
+});

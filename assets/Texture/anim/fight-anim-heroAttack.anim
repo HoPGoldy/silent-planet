@@ -1,0 +1,125 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "fight-anim-heroAttack",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.25,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "hero/image": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                80
+              ]
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": [
+                489,
+                80
+              ]
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": [
+                580,
+                80
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                0,
+                80
+              ]
+            }
+          ]
+        }
+      },
+      "monster/image": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.08333333333333333,
+              "value": [
+                0,
+                80
+              ]
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": [
+                100,
+                70
+              ]
+            },
+            {
+              "frame": 0.15,
+              "value": [
+                0,
+                80
+              ]
+            }
+          ]
+        }
+      },
+      "monster/image/damage": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.08333333333333333,
+              "value": [
+                0,
+                0
+              ],
+              "motionPath": [
+                [
+                  90.4,
+                  83,
+                  27.4,
+                  88,
+                  149.4,
+                  94
+                ]
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                173,
+                0
+              ],
+              "motionPath": []
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

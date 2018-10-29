@@ -1,0 +1,91 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "hero-anim-defense",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "image": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                80
+              ]
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": [
+                -40,
+                80
+              ]
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": [
+                -40,
+                80
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                0,
+                80
+              ]
+            }
+          ]
+        }
+      },
+      "image/defense": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "image/damage": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                0,
+                150
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

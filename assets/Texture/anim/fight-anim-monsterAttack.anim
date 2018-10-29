@@ -1,0 +1,76 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "fight-anim-monsterAttack",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.25,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "monster/image": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                80
+              ]
+            },
+            {
+              "frame": 0.08333333333333333,
+              "value": [
+                -480,
+                80
+              ]
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": [
+                -580,
+                80
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                0,
+                80
+              ]
+            }
+          ]
+        }
+      },
+      "hero/image": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.08333333333333333,
+              "value": [
+                0,
+                80
+              ]
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": [
+                -85,
+                65
+              ]
+            },
+            {
+              "frame": 0.15,
+              "value": [
+                0,
+                80
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

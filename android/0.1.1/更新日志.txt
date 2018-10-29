@@ -1,0 +1,9 @@
+0.1.1.0更新
+-添加按下按钮的反馈动画
+-添加针对ControlCenter场景的预加载
+-运行速度优化 将ControlCenter场景的数据检索操作从84500次/秒减少至1450次/秒
+-代码整合，从现在开始，BuildArea,ManufatrueArea,BuyArea,ArticleInfoArea节点的创建均在ControlCenterCreate.js中完成。AreicleInfoArea节点的数据更新移交至	ControlCenterControl.js中
+-添加返回键退出游戏功能
+
+0.1.1.1更新
+-修复了开始界面的一个错别字

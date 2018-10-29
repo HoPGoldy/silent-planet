@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "fight-anim-failure",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.8333333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "black": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.8333333333333334,
+      "func": "backBase",
+      "params": []
+    }
+  ]
+}

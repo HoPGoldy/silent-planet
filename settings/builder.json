@@ -1,0 +1,26 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "excludeScenes": [
+    "aec64bf1-d967-406c-bc2a-9c8fa7f2cb51"
+  ],
+  "includeAnySDK": false,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "inlineSpriteFrames": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.SilentPlanet",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "47b87e00-2923-4042-bf7e-05a3b66e4b6f",
+  "title": "SilentPlanet",
+  "webOrientation": "landscape"
+}

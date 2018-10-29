@@ -1,0 +1,44 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "welcome-anim-gameStart",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.9833333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0.5,
+          "value": 0
+        },
+        {
+          "frame": 0.8333333333333334,
+          "value": 255
+        },
+        {
+          "frame": 1.65,
+          "value": 255
+        },
+        {
+          "frame": 1.9833333333333334,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "frame": 0,
+      "func": "preLoadControlCenter",
+      "params": []
+    },
+    {
+      "frame": 1.9833333333333334,
+      "func": "sceneChange",
+      "params": []
+    }
+  ]
+}
